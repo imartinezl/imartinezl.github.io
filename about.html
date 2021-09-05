@@ -50,7 +50,7 @@
 
 <body>
     <script>0</script>
-    <div class="antialiased flex flex-col overflow-hidden w-screen h-screen sm:flex-row">
+    <div class="antialiased flex flex-col overflow-hidden overscroll-auto w-screen h-screen sm:flex-row">
         <div @click.away="open = false" x-data="{ open: false }">
     <div class="flex flex-col max-h-screen sm:w-64">
         <div class="flex flex-row items-center justify-between p-7">
@@ -195,10 +195,10 @@
 </div>
 
 <!-- <embed src= "assets/docs/resume.pdf" type="application/pdf" width="100%" height="100%"> -->
-        <div class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow divide-y space-y-7">
+        <div class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow divide-y space-y-7 pb-48 sm:pb-14">
 
     <div class="text-left sm:text-left max-w-prose">
-        <p>Hi, my name is Iñigo and I’m a data scientist and researcher on <strong>data science and artificial intelligence</strong>.
+        <p>Hi, my name is Iñigo and I’m a data scientist and researcher on <strong>machine learning and artificial intelligence</strong>.
 <br /><br />
 I have an extensive background working with large and varied datasets and using advanced statistical methods.
 I <strong>transform data into valuable and tangible insights</strong> through data science techniques, machine learning and visualization.</p>
@@ -224,35 +224,43 @@ I have a strong interest on
         </div>
         <div class="flex flex-wrap max-w-prose">
             
-            <a href=https://en.wikipedia.org/wiki/Machine_learning target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Machine_learning target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 machine learning
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Time_series target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Time_series target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 time series
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Functional_data_analysis target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Functional_data_analysis target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 functional data analysis
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Anomaly_detection target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Anomaly_detection target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 anomaly detection
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Bayesian_statistics target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Bayesian_statistics target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 Bayesian statistics
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Agent-based_model target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Agent-based_model target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 agent-based simulation
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Data_visualization target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Data_visualization target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 data visualization
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Analytics target="_blank" class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
+            <a href=https://en.wikipedia.org/wiki/Analytics target="_blank"
+                class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 data analytics
             </a>
             
@@ -263,83 +271,88 @@ I have a strong interest on
         <div class="font-bold text-xl pt-7 pb-3">
             Experience
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-6">
             
-            <div class="py-3">
-                <a href=https://www.vicomtech.org/en/ target="_blank" class="font-bold border-b border-blue-300 hover:text-blue-700">
+            <div class="space-y-0.5">
+                <a href=https://www.vicomtech.org/en/ target="_blank"
+                    class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     Vicomtech Research Center
                 </a>
-                <div class="italic">
+                <div class="text-sm pt-1">
                     Data Intelligence for Energy and Industrial Processes
                 </div>
-                <div>
+                <div class="text-sm">
                     PhD, Data Scientist
                 </div>
-                <div class="text-sm">
+                <div class="text-sm text-gray-600">
                     Jun. 2019 - Present
                 </div>
             </div>
             <!-- San Sebastian, Spain -->
             
-            <div class="py-3">
-                <a href=https://www.siemensgamesa.com/en-int target="_blank" class="font-bold border-b border-blue-300 hover:text-blue-700">
+            <div class="space-y-0.5">
+                <a href=https://www.siemensgamesa.com/en-int/products-and-services/service-wind/diagnostics target="_blank"
+                    class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     NEM, Siemens Gamesa Renewable Energy
                 </a>
-                <div class="italic">
+                <div class="text-sm pt-1">
                     Data Science
                 </div>
-                <div>
+                <div class="text-sm">
                     PhD, Data Scientist
                 </div>
-                <div class="text-sm">
+                <div class="text-sm text-gray-600">
                     Jul. 2017 - May. 2019
                 </div>
             </div>
             <!-- San Sebastian, Spain -->
             
-            <div class="py-3">
-                <a href=https://www.media.mit.edu/ target="_blank" class="font-bold border-b border-blue-300 hover:text-blue-700">
+            <div class="space-y-0.5">
+                <a href=https://www.media.mit.edu/ target="_blank"
+                    class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     MIT Media Lab
                 </a>
-                <div class="italic">
+                <div class="text-sm pt-1">
                     City Science
                 </div>
-                <div>
+                <div class="text-sm">
                     Research Assistant & Master's Thesis
                 </div>
-                <div class="text-sm">
+                <div class="text-sm text-gray-600">
                     Sep. 2016 - May. 2017
                 </div>
             </div>
             <!-- Boston, US -->
             
-            <div class="py-3">
-                <a href=https://www.ceit.es/en/ target="_blank" class="font-bold border-b border-blue-300 hover:text-blue-700">
+            <div class="space-y-0.5">
+                <a href=https://www.ceit.es/en/ target="_blank"
+                    class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     CEIT Research Center
                 </a>
-                <div class="italic">
+                <div class="text-sm pt-1">
                     Computational Biology
                 </div>
-                <div>
+                <div class="text-sm">
                     Intern
                 </div>
-                <div class="text-sm">
+                <div class="text-sm text-gray-600">
                     Jun. 2015 - Sep. 2015
                 </div>
             </div>
             <!-- San Sebastian, Spain -->
             
-            <div class="py-3">
-                <a href=https://www.nanogune.eu/en/research/groups/nanomagnetism target="_blank" class="font-bold border-b border-blue-300 hover:text-blue-700">
+            <div class="space-y-0.5">
+                <a href=https://www.nanogune.eu/en/research/groups/nanomagnetism target="_blank"
+                    class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     CIC nanoGUNE
                 </a>
-                <div class="italic">
+                <div class="text-sm pt-1">
                     Nanomagnetism
                 </div>
-                <div>
+                <div class="text-sm">
                     Intern
                 </div>
-                <div class="text-sm">
+                <div class="text-sm text-gray-600">
                     Jul. 2014 - Sep. 2014
                 </div>
             </div>
@@ -352,55 +365,61 @@ I have a strong interest on
         <div class="font-bold text-xl pt-7 pb-3">
             Education
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-4">
             
-            <div class="py-3">
-                <a href=https://www.unav.edu/en/home target="_blank" class="font-bold border-b border-blue-300 hover:text-blue-700">
-                    University of Navarra - Tecnun School of Engineering
-                </a>
-                <div class="text-sm">
-                    San Sebastian, Spain
-                </div>
-                
-                <div class="pl-3 py-3">
-                    <div class="italic">
-                        Ph.D. in Applied Engineering
-                    </div>
-                    <div class="text-sm text-gray-700">
-                        Mar. 2018 - Expected graduation Jan. 2022
+            <div class="flex flex-col gap-4">
+                <div>
+                    <a href=https://www.unav.edu/en/home target="_blank"
+                        class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
+                        University of Navarra - Tecnun School of Engineering
+                    </a>
+                    <div class="text-sm">
+                        San Sebastian, Spain
                     </div>
                 </div>
-                
-                <div class="pl-3 py-3">
-                    <div class="italic">
-                        Master of Science in Industrial (Mechanical) Engineering
+                <div class="pl-3 flex flex-col gap-4">
+                    
+                    <div class="flex flex-col gap-0">
+                            <div class="text-sm">
+                                Ph.D. in Applied Engineering
+                            </div>
+                            <div class="text-sm text-gray-600">
+                                Mar. 2018 - Expected graduation Jan. 2022
+                            </div>
                     </div>
-                    <div class="text-sm text-gray-700">
-                        Sep. 2015 - Jul. 2017
+                    
+                    <div class="flex flex-col gap-0">
+                            <div class="text-sm">
+                                Master of Science in Industrial (Mechanical) Engineering
+                            </div>
+                            <div class="text-sm text-gray-600">
+                                Sep. 2015 - Jul. 2017
+                            </div>
                     </div>
+                    
+                    <div class="flex flex-col gap-0">
+                            <div class="text-sm">
+                                Bachelor of Science in Industrial Technologies
+                            </div>
+                            <div class="text-sm text-gray-600">
+                                Sep. 2011 - May. 2015
+                            </div>
+                    </div>
+                    
                 </div>
-                
-                <div class="pl-3 py-3">
-                    <div class="italic">
-                        Bachelor of Science in Industrial Technologies
-                    </div>
-                    <div class="text-sm text-gray-700">
-                        Sep. 2011 - May. 2015
-                    </div>
-                </div>
-                
             </div>
             
         </div>
     </div>
 
+    
     <div>
         <div class="font-bold text-xl pt-7 pb-3">
             Skills
         </div>
         <!-- <div class="flex flex-col space-y-2 pl-3">
             
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-pink-700 space-x-1.5 sm:space-x-3 items-center">
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-pink-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-pink-700">
                         Languages
                     </div>
@@ -438,8 +457,8 @@ I have a strong interest on
                     </div>
                     
                 </div>
-            
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-red-700 space-x-1.5 sm:space-x-3 items-center">
+                
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-red-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-red-700">
                         Data Science
                     </div>
@@ -465,6 +484,10 @@ I have a strong interest on
                     </div>
                     
                     <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
+                        Scipy
+                    </div>
+                    
+                    <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
                         Pandas
                     </div>
                     
@@ -473,8 +496,8 @@ I have a strong interest on
                     </div>
                     
                 </div>
-            
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-yellow-700 space-x-1.5 sm:space-x-3 items-center">
+                
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-yellow-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-yellow-700">
                         Web Dev
                     </div>
@@ -504,20 +527,16 @@ I have a strong interest on
                     </div>
                     
                     <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
-                        TailwindCSS
+                        Tailwind
                     </div>
                     
                     <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
                         Shiny
                     </div>
                     
-                    <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
-                        WebGL
-                    </div>
-                    
                 </div>
-            
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-indigo-700 space-x-1.5 sm:space-x-3 items-center">
+                
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-indigo-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-indigo-700">
                         Graphics
                     </div>
@@ -550,9 +569,13 @@ I have a strong interest on
                         p5
                     </div>
                     
+                    <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
+                        WebGL
+                    </div>
+                    
                 </div>
-            
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-green-700 space-x-1.5 sm:space-x-3 items-center">
+                
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-green-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-green-700">
                         Simulation
                     </div>
@@ -574,8 +597,8 @@ I have a strong interest on
                     </div>
                     
                 </div>
-            
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-blue-700 space-x-1.5 sm:space-x-3 items-center">
+                
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-blue-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-blue-700">
                         Maps
                     </div>
@@ -597,8 +620,8 @@ I have a strong interest on
                     </div>
                     
                 </div>
-            
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-purple-700 space-x-1.5 sm:space-x-3 items-center">
+                
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-purple-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-purple-700">
                         Fabrication
                     </div>
@@ -620,8 +643,8 @@ I have a strong interest on
                     </div>
                     
                 </div>
-            
-                <div class="flex flex-wrap divide-x divide-opacity-60 divide-gray-700 space-x-1.5 sm:space-x-3 items-center">
+                
+            <div class="flex flex-wrap divide-x divide-opacity-60 divide-gray-700 space-x-1.5 sm:space-x-3 items-center">
                     <div class="px-3 font-sans font-medium text-sm rounded-full border-2 border-opacity-80 border-gray-700">
                         CAD CAE
                     </div>
@@ -643,12 +666,12 @@ I have a strong interest on
                     </div>
                     
                 </div>
-            
-        </div> -->
-        <div class="flex flex-wrap space-x-0 justify-between sm:justify-start">
-            
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-pink-700 items-start">
-                <div
+                
+            </div> -->
+            <!-- <div class="flex flex-wrap space-x-0 justify-between sm:justify-start">
+                
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-pink-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-pink-700">
                     Languages
                 </div>
@@ -687,8 +710,8 @@ I have a strong interest on
                 
             </div>
             
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-red-700 items-start">
-                <div
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-red-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-red-700">
                     Data Science
                 </div>
@@ -714,6 +737,10 @@ I have a strong interest on
                 </div>
                 
                 <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
+                    Scipy
+                </div>
+                
+                <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
                     Pandas
                 </div>
                 
@@ -723,8 +750,8 @@ I have a strong interest on
                 
             </div>
             
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-yellow-700 items-start">
-                <div
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-yellow-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-yellow-700">
                     Web Dev
                 </div>
@@ -754,21 +781,17 @@ I have a strong interest on
                 </div>
                 
                 <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
-                    TailwindCSS
+                    Tailwind
                 </div>
                 
                 <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
                     Shiny
                 </div>
                 
-                <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
-                    WebGL
-                </div>
-                
             </div>
             
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-indigo-700 items-start">
-                <div
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-indigo-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-indigo-700">
                     Graphics
                 </div>
@@ -801,10 +824,14 @@ I have a strong interest on
                     p5
                 </div>
                 
+                <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
+                    WebGL
+                </div>
+                
             </div>
             
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-green-700 items-start">
-                <div
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-green-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-green-700">
                     Simulation
                 </div>
@@ -827,8 +854,8 @@ I have a strong interest on
                 
             </div>
             
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-blue-700 items-start">
-                <div
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-blue-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-blue-700">
                     Maps
                 </div>
@@ -851,8 +878,8 @@ I have a strong interest on
                 
             </div>
             
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-purple-700 items-start">
-                <div
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-purple-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-purple-700">
                     Fabrication
                 </div>
@@ -875,8 +902,8 @@ I have a strong interest on
                 
             </div>
             
-            <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-gray-700 items-start">
-                <div
+                <div class="flex flex-col sm:pl-6 pb-6 divide-x divide-opacity-60 divide-gray-700 items-start">
+                    <div
                     class="min-w-full px-3 py-1 font-sans font-medium text-sm text-center rounded-full border-2 border-opacity-80 border-gray-700">
                     CAD CAE
                 </div>
@@ -899,122 +926,273 @@ I have a strong interest on
                 
             </div>
             
+        </div> -->
+        
+        <div class="gap-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 max-w-screen-md">
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    Languages
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    R
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Python
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Julia
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    C++
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    CUDA
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Matlab
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Java
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    SQL
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    Data Science
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    PyTorch
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Tensorflow
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Keras
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Scikit-Learn
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Numpy
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Scipy
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Pandas
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Tidyverse
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    Web Dev
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Javascript
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    React
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Vue
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Node
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Webpack
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Jekyll
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Tailwind
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Shiny
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    Graphics
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Adobe CC
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Inkscape
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    TikZ
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    ggplot2
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    matplotlib
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Processing
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    p5
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    WebGL
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    Simulation
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Simpy
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    GAMA
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Simulink
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Unity
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    Maps
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    QGIS
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Mapbox
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Leaflet
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    deck.gl
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    Fabrication
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Laser cutter
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Water jet
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    3D printing
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    CNC
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="uppercase font-bold text-sm">
+                    CAD CAE
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    Solidworks
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    PTC Creo
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    AutoCAD
+                </div>
+                
+                <div class="text-sm font-sans font-light">
+                    ANSYS
+                </div>
+                
+            </div>
+            
         </div>
     </div>
-
-
+    
+    <div class="font-bold text-xl pt-7">
+        <a href="assets/docs/resume.pdf" target="_blank">
+            View My Resume &#xe04b;
+        </a>
+    </div>
+    
     <!-- 
     On my website you can find some examples of my projects, most of them are links to a website or interactive
     visualization.
 
     hackerrank?? -->
 </div>
-        
-        <!-- 
-    <ul>
-        
-        <li>
-          <a href="/projects/project_2/index.html">
-            <div>
-              Project 2 title
-            </div>
-            <div>
-              
-                May 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="obama.jpg" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_1/index.html">
-            <div>
-              Project 1 title
-            </div>
-            <div>
-              
-                Jun 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="image.png" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_3/index.html">
-            <div>
-              Project 3 title
-            </div>
-            <div>
-              
-                Jun 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="portrait.jpg" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_0/index.html">
-            <div>
-              Project 0 title
-            </div>
-            <div>
-              
-                Jul 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="image.gif" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/template/index.html">
-            <div>
-              Very very very very very very very very very long Title
-            </div>
-            <div>
-              
-                Jul 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="html51.png" alt="">
-          
-        </li>
-      
-    </ul>
- -->
     </div>
 </body>
 

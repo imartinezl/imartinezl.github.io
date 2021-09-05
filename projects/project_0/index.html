@@ -52,7 +52,7 @@
 
 <body>
     <script>0</script>
-    <div class="antialiased flex flex-col overflow-hidden w-screen h-screen sm:flex-row">
+    <div class="antialiased flex flex-col overflow-hidden overscroll-auto w-screen h-screen sm:flex-row">
         <div @click.away="open = false" x-data="{ open: false }">
     <div class="flex flex-col max-h-screen sm:w-64">
         <div class="flex flex-row items-center justify-between p-7">
@@ -197,283 +197,179 @@
 </div>
 
 <!-- <embed src= "assets/docs/resume.pdf" type="application/pdf" width="100%" height="100%"> -->
-        <div
-  class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow">
-  
-  <div class="flex flex-col flex-grow divide-y justify-between max-w-screen-xl">
+        <div class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow pb-24 sm:pb-14">
 
-  <div class="divide-y">
+  <div class="flex flex-col flex-grow divide-y justify-between max-w-screen-xl overscroll-auto">
 
-    <div class="flex flex-row justify-between items-end">
-      <p class="text-xl font-bold sm:text-lg">
-        Project 0 title
-      </p>
+    <div class="divide-y">
 
-      <div class="text-xl flex pl-4 gap-x-2">
-        
+      <div class="flex flex-row justify-between items-end">
+        <p class="text-xl font-bold sm:text-lg">
+          Project 0 title
+        </p>
 
-        
-      </div>
-    </div>
-
-    
-    <div>
-      <div class="py-3 sm:max-h-full md:max-w-2xl">
-        
-        <img src="image.gif" class="">
-        
-        
-      </div>
-    </div>
-    
-
-    <div class="divide-y md:divide-y-0 md:grid md:grid-cols-2 md:gap-2 md:justify-between">
-
-      
-
-      <div class="py-3 text-sm md:order-first">
-
-        
-        <div class="flex gap-x-1">
-          <div class="">
-            Date:
-          </div>
-          <div class="">
-            
-            Jul 2021
-            
-          </div>
-        </div>
-        
-
-
-        
-        <div class="flex flex-wrap gap-x-1">
-          <div class="">
-            Tags:
-          </div>
+        <div class="text-xl flex pl-4 gap-x-2">
           
-          
-          <a href=/tags/tag4/ rel="category tag" class="">
-            #tag4
-          </a>
+
           
         </div>
-        
+      </div>
+
+      
+      <div>
+        <div class="py-3 sm:max-h-full md:max-w-2xl">
+          
+          <img src="image.gif" class="">
+          
+          
+        </div>
+      </div>
+      
+
+      <div class="divide-y md:divide-y-0 md:grid md:grid-cols-2 md:gap-2 md:justify-between">
 
         
 
-        
+        <div class="py-3 text-sm md:order-first">
 
+          
+          <div class="flex flex-wrap gap-x-1 items-baseline">
+            <div class="">
+              Date:
+            </div>
+            <div class="p-0.5">
+              
+              Jul 2021
+              
+            </div>
+          </div>
+          
+
+
+          
+          <div class="flex flex-wrap gap-x-1 items-baseline">
+            <div class="">
+              Tags:
+            </div>
+            
+            
+            <a href=/tags/tag4/
+              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              #tag4
+            </a>
+            
+          </div>
+          
+
+          
+
+          
+
+
+        </div>
 
       </div>
+
+      
+      <div class="py-3 text-sm">
+        <h1 id="project-0-header">Project 0 header</h1>
+
+      </div>
+      
+
+
+      
+      
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+
+
+          
+
+      
+      
+
+      
+
+      
+
+
+          
+
+      
+      
+
+      
+
+      
+
+
+          
+
+      
+      
+
+      
+
+      
+
+
+          
+
+      
+      
+
+      
+
+      
+
+
+          
+
+          
+      
 
     </div>
 
 
     
     
-    
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-
-        
-
-    
-    
-
-    
-
-    
-
-
-        
-
-    
-    
-
-    
-
-    
-
-
-        
-
-    
-    
-
-    
-
-    
-
-
-        
-
-    
-    
-
-    
-
-    
-
-
-        
-
-        
-    
-
-  </div>
-
-
-  
-  
-  <div class="flex justify-between gap-x-4 py-1.5">
-    
-    <a href="/projects/project_3/index.html" class="flex min-w-0 gap-x-1 hover:text-gray-600">
-      <p>&#xe04a;</p>
-      <p class="">Prev</p>
+    <div class="flex justify-between gap-x-4 py-3">
       
-    </a>
-    
-
-    
-    <a href="/projects/template/index.html" class="flex min-w-0 gap-x-1 hover:text-gray-600">
+      <a href="/projects/project_3/index.html" class="flex min-w-0 gap-x-1 hover:text-gray-600">
+        <p>&#xe04a;</p>
+        <p class="">Prev</p>
+        
+      </a>
       
-      <p class="">Next</p>
-      <p>&#xe04b;</p>
-    </a>
+
+      
+      <a href="/projects/template/index.html" class="flex min-w-0 gap-x-1 hover:text-gray-600">
+        
+        <p class="">Next</p>
+        <p>&#xe04b;</p>
+      </a>
+      
+    </div>
     
-  </div>
-  
 
 
-  <!-- <a href="/work.html" class="flex items-center sm:hidden py-2 hover:text-gray-600">
+    <!-- <a href="/work.html" class="flex items-center sm:hidden py-2 hover:text-gray-600">
     &#xe04d; Back to projects
     &#xe124;
   </a> -->
 
-  <!-- <div>
-    <h1 id="project-0-header">Project 0 header</h1>
-
-  </div> -->
-
+  </div>
 </div>
-</div>
-        
-        <!-- 
-    <ul>
-        
-        <li>
-          <a href="/projects/project_2/index.html">
-            <div>
-              Project 2 title
-            </div>
-            <div>
-              
-                May 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="obama.jpg" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_1/index.html">
-            <div>
-              Project 1 title
-            </div>
-            <div>
-              
-                Jun 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="image.png" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_3/index.html">
-            <div>
-              Project 3 title
-            </div>
-            <div>
-              
-                Jun 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="portrait.jpg" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_0/index.html">
-            <div>
-              Project 0 title
-            </div>
-            <div>
-              
-                Jul 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="image.gif" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/template/index.html">
-            <div>
-              Very very very very very very very very very long Title
-            </div>
-            <div>
-              
-                Jul 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="html51.png" alt="">
-          
-        </li>
-      
-    </ul>
- -->
     </div>
 </body>
 

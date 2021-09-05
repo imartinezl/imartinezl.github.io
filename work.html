@@ -50,7 +50,7 @@
 
 <body>
     <script>0</script>
-    <div class="antialiased flex flex-col overflow-hidden w-screen h-screen sm:flex-row">
+    <div class="antialiased flex flex-col overflow-hidden overscroll-auto w-screen h-screen sm:flex-row">
         <div @click.away="open = false" x-data="{ open: false }">
     <div class="flex flex-col max-h-screen sm:w-64">
         <div class="flex flex-row items-center justify-between p-7">
@@ -195,11 +195,757 @@
 </div>
 
 <!-- <embed src= "assets/docs/resume.pdf" type="application/pdf" width="100%" height="100%"> -->
-        <div class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow">
+        <div class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow pb-24 sm:pb-14">
 
-  <p class="text-2xl font-normal sm:text-lg">Projects</p> 
-  
-  <ul>
+  <div class="flex flex-col flex-grow divide-y gap-2 max-w-screen-xl overscroll-auto">
+
+    <p class="font-bold text-xl">Featured Projects</p>
+
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
+      
+      <a href="/projects/project_2/index.html" class="relative h-64">
+
+        
+        <div class="h-64">
+          <img src="/projects/project_2/obama.jpg" 
+          class="h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="absolute top-0 h-64 flex flex-col w-full justify-end gap-y-2 p-4
+        bg-white opacity-80 sm:opacity-0 sm:hover:opacity-80 transition duration-200 ease-custom">
+
+          
+          <div class="font-bold">
+            Project 2 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag1
+            </div>
+            
+            <div class="rounded">
+              #tag2
+            </div>
+            
+            <div class="rounded">
+              #taglonglong
+            </div>
+            
+            <div class="rounded">
+              #taglong
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+        
+
+      </a>
+      
+      <a href="/projects/project_1/index.html" class="relative h-64">
+
+        
+        <div class="h-64">
+          <img src="/projects/project_1/image.png" 
+          class="h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="absolute top-0 h-64 flex flex-col w-full justify-end gap-y-2 p-4
+        bg-white opacity-80 sm:opacity-0 sm:hover:opacity-80 transition duration-200 ease-custom">
+
+          
+          <div class="font-bold">
+            Project 1 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag1
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+        
+
+      </a>
+      
+      <a href="/projects/project_3/index.html" class="relative h-64">
+
+        
+        <div class="h-64">
+          <img src="/projects/project_3/portrait.jpg" 
+          class="h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="absolute top-0 h-64 flex flex-col w-full justify-end gap-y-2 p-4
+        bg-white opacity-80 sm:opacity-0 sm:hover:opacity-80 transition duration-200 ease-custom">
+
+          
+          <div class="font-bold">
+            Project 3 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag2
+            </div>
+            
+            <div class="rounded">
+              #tag3
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+        
+
+      </a>
+      
+      <a href="/projects/project_0/index.html" class="relative h-64">
+
+        
+        <div class="h-64">
+          <img src="/projects/project_0/image.gif" 
+          class="h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="absolute top-0 h-64 flex flex-col w-full justify-end gap-y-2 p-4
+        bg-white opacity-80 sm:opacity-0 sm:hover:opacity-80 transition duration-200 ease-custom">
+
+          
+          <div class="font-bold">
+            Project 0 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag4
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+        
+
+      </a>
+      
+      <a href="/projects/template/index.html" class="relative h-64">
+
+        
+        <div class="h-64">
+          <img src="/projects/template/SanFrancisco.jpg" 
+          class="h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="absolute top-0 h-64 flex flex-col w-full justify-end gap-y-2 p-4
+        bg-white opacity-80 sm:opacity-0 sm:hover:opacity-80 transition duration-200 ease-custom">
+
+          
+          <div class="font-bold">
+            Very very very very very very very very very long Title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag1
+            </div>
+            
+            <div class="rounded">
+              #tag2
+            </div>
+            
+            <div class="rounded">
+              #taglonglong
+            </div>
+            
+            <div class="rounded">
+              #taglong
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+        
+
+      </a>
+      
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-4">
+      
+      <a href="/projects/project_2/index.html" class="group flex flex-col justify-start gap-y-4 pb-4
+    transition duration-200 ease-custom transform hover:-translate-y-1">
+
+        
+        <div class="h-40 md:h-64">
+          <img src="/projects/project_2/obama.jpg" class="h-40 md:h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="px-3 font-bold group-hover:text-blue-700">
+          Project 2 title
+        </div>
+        
+
+        
+        <div class="px-3 flex flex-wrap gap-x-1 text-sm text-gray-600">
+          
+          <div class="rounded">
+            #tag1
+          </div>
+          
+          <div class="rounded">
+            #tag2
+          </div>
+          
+          <div class="rounded">
+            #taglonglong
+          </div>
+          
+          <div class="rounded">
+            #taglong
+          </div>
+          
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/project_1/index.html" class="group flex flex-col justify-start gap-y-4 pb-4
+    transition duration-200 ease-custom transform hover:-translate-y-1">
+
+        
+        <div class="h-40 md:h-64">
+          <img src="/projects/project_1/image.png" class="h-40 md:h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="px-3 font-bold group-hover:text-blue-700">
+          Project 1 title
+        </div>
+        
+
+        
+        <div class="px-3 flex flex-wrap gap-x-1 text-sm text-gray-600">
+          
+          <div class="rounded">
+            #tag1
+          </div>
+          
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/project_3/index.html" class="group flex flex-col justify-start gap-y-4 pb-4
+    transition duration-200 ease-custom transform hover:-translate-y-1">
+
+        
+        <div class="h-40 md:h-64">
+          <img src="/projects/project_3/portrait.jpg" class="h-40 md:h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="px-3 font-bold group-hover:text-blue-700">
+          Project 3 title
+        </div>
+        
+
+        
+        <div class="px-3 flex flex-wrap gap-x-1 text-sm text-gray-600">
+          
+          <div class="rounded">
+            #tag2
+          </div>
+          
+          <div class="rounded">
+            #tag3
+          </div>
+          
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/project_0/index.html" class="group flex flex-col justify-start gap-y-4 pb-4
+    transition duration-200 ease-custom transform hover:-translate-y-1">
+
+        
+        <div class="h-40 md:h-64">
+          <img src="/projects/project_0/image.gif" class="h-40 md:h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="px-3 font-bold group-hover:text-blue-700">
+          Project 0 title
+        </div>
+        
+
+        
+        <div class="px-3 flex flex-wrap gap-x-1 text-sm text-gray-600">
+          
+          <div class="rounded">
+            #tag4
+          </div>
+          
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/template/index.html" class="group flex flex-col justify-start gap-y-4 pb-4
+    transition duration-200 ease-custom transform hover:-translate-y-1">
+
+        
+        <div class="h-40 md:h-64">
+          <img src="/projects/template/SanFrancisco.jpg" class="h-40 md:h-64 w-full object-cover">
+        </div>
+        
+
+        
+        <div class="px-3 font-bold group-hover:text-blue-700">
+          Very very very very very very very very very long Title
+        </div>
+        
+
+        
+        <div class="px-3 flex flex-wrap gap-x-1 text-sm text-gray-600">
+          
+          <div class="rounded">
+            #tag1
+          </div>
+          
+          <div class="rounded">
+            #tag2
+          </div>
+          
+          <div class="rounded">
+            #taglonglong
+          </div>
+          
+          <div class="rounded">
+            #taglong
+          </div>
+          
+        </div>
+        
+
+      </a>
+      
+    </div> -->
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 py-4">
+      
+      <a href="/projects/project_2/index.html" class="flex flex-col justify-start shadow
+        transition duration-200 ease-custom 
+        sm:transform sm:hover:-translate-y-1 sm:relative">
+
+
+        
+        <img class="h-64 w-full object-cover" src="/projects/project_2/obama.jpg">
+        
+
+        
+        <div class="w-full flex flex-col gap-y-2 p-4 
+        sm:h-64 sm:absolute sm:top-0 sm:justify-end
+        transition duration-200 ease-custom 
+        sm:bg-white sm:opacity-0 sm:hover:opacity-80">
+
+          
+          <div class="font-bold">
+            Project 2 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag1
+            </div>
+            
+            <div class="rounded">
+              #tag2
+            </div>
+            
+            <div class="rounded">
+              #taglonglong
+            </div>
+            
+            <div class="rounded">
+              #taglong
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/project_1/index.html" class="flex flex-col justify-start shadow
+        transition duration-200 ease-custom 
+        sm:transform sm:hover:-translate-y-1 sm:relative">
+
+
+        
+        <img class="h-64 w-full object-cover" src="/projects/project_1/image.png">
+        
+
+        
+        <div class="w-full flex flex-col gap-y-2 p-4 
+        sm:h-64 sm:absolute sm:top-0 sm:justify-end
+        transition duration-200 ease-custom 
+        sm:bg-white sm:opacity-0 sm:hover:opacity-80">
+
+          
+          <div class="font-bold">
+            Project 1 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag1
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/project_3/index.html" class="flex flex-col justify-start shadow
+        transition duration-200 ease-custom 
+        sm:transform sm:hover:-translate-y-1 sm:relative">
+
+
+        
+        <img class="h-64 w-full object-cover" src="/projects/project_3/portrait.jpg">
+        
+
+        
+        <div class="w-full flex flex-col gap-y-2 p-4 
+        sm:h-64 sm:absolute sm:top-0 sm:justify-end
+        transition duration-200 ease-custom 
+        sm:bg-white sm:opacity-0 sm:hover:opacity-80">
+
+          
+          <div class="font-bold">
+            Project 3 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag2
+            </div>
+            
+            <div class="rounded">
+              #tag3
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/project_0/index.html" class="flex flex-col justify-start shadow
+        transition duration-200 ease-custom 
+        sm:transform sm:hover:-translate-y-1 sm:relative">
+
+
+        
+        <img class="h-64 w-full object-cover" src="/projects/project_0/image.gif">
+        
+
+        
+        <div class="w-full flex flex-col gap-y-2 p-4 
+        sm:h-64 sm:absolute sm:top-0 sm:justify-end
+        transition duration-200 ease-custom 
+        sm:bg-white sm:opacity-0 sm:hover:opacity-80">
+
+          
+          <div class="font-bold">
+            Project 0 title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag4
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+      </a>
+      
+      <a href="/projects/template/index.html" class="flex flex-col justify-start shadow
+        transition duration-200 ease-custom 
+        sm:transform sm:hover:-translate-y-1 sm:relative">
+
+
+        
+        <img class="h-64 w-full object-cover" src="/projects/template/SanFrancisco.jpg">
+        
+
+        
+        <div class="w-full flex flex-col gap-y-2 p-4 
+        sm:h-64 sm:absolute sm:top-0 sm:justify-end
+        transition duration-200 ease-custom 
+        sm:bg-white sm:opacity-0 sm:hover:opacity-80">
+
+          
+          <div class="font-bold">
+            Very very very very very very very very very long Title
+          </div>
+          
+
+          
+          <div class="flex flex-wrap gap-x-1 text-sm text-gray-600">
+            
+            <div class="rounded">
+              #tag1
+            </div>
+            
+            <div class="rounded">
+              #tag2
+            </div>
+            
+            <div class="rounded">
+              #taglonglong
+            </div>
+            
+            <div class="rounded">
+              #taglong
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+
+      </a>
+      
+    </div>
+
+    
+<p class="font-bold text-xl pt-6">Project Collection</p>
+
+
+<table class="table-auto">
+  <thead>
+    <tr>
+      <th class="p-2 text-left font-normal text-gray-600">Year</th>
+      <th class="p-2 text-left font-normal text-gray-600">Title</th>
+      <th class="p-2 text-left font-normal text-gray-600 hidden md:block">Built with</th>
+      <th class="p-2 text-left font-normal text-gray-600">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr class="rounded-md hover:bg-gray-200">
+      <td class="p-2 align-baseline font-mono text-sm text-blue-700">
+        2021
+      </td>
+      <td class="p-2 align-baseline font-bold hover:text-blue-700">
+        <a href="/projects/project_2/index.html" class="flex flex-grow">
+          Project 2 title
+        </a>
+      </td>
+      <td class="hidden md:block">
+        
+      </td>
+      <td>
+        <div class="flex gap-x-1 p-2">
+          
+
+          
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="rounded-md hover:bg-gray-200">
+      <td class="p-2 align-baseline font-mono text-sm text-blue-700">
+        2021
+      </td>
+      <td class="p-2 align-baseline font-bold hover:text-blue-700">
+        <a href="/projects/project_1/index.html" class="flex flex-grow">
+          Project 1 title
+        </a>
+      </td>
+      <td class="hidden md:block">
+        
+      </td>
+      <td>
+        <div class="flex gap-x-1 p-2">
+          
+
+          
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="rounded-md hover:bg-gray-200">
+      <td class="p-2 align-baseline font-mono text-sm text-blue-700">
+        2021
+      </td>
+      <td class="p-2 align-baseline font-bold hover:text-blue-700">
+        <a href="/projects/project_3/index.html" class="flex flex-grow">
+          Project 3 title
+        </a>
+      </td>
+      <td class="hidden md:block">
+        
+      </td>
+      <td>
+        <div class="flex gap-x-1 p-2">
+          
+
+          
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="rounded-md hover:bg-gray-200">
+      <td class="p-2 align-baseline font-mono text-sm text-blue-700">
+        2021
+      </td>
+      <td class="p-2 align-baseline font-bold hover:text-blue-700">
+        <a href="/projects/project_0/index.html" class="flex flex-grow">
+          Project 0 title
+        </a>
+      </td>
+      <td class="hidden md:block">
+        
+      </td>
+      <td>
+        <div class="flex gap-x-1 p-2">
+          
+
+          
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="rounded-md hover:bg-gray-200">
+      <td class="p-2 align-baseline font-mono text-sm text-blue-700">
+        2021
+      </td>
+      <td class="p-2 align-baseline font-bold hover:text-blue-700">
+        <a href="/projects/template/index.html" class="flex flex-grow">
+          Very very very very very very very very very long Title
+        </a>
+      </td>
+      <td class="hidden md:block">
+        
+        
+        <div class="flex flex-wrap">
+          
+          <div class="p-2 align-baseline text-sm font-sans font-light">
+            technology1
+          </div>
+          <div class="last:hidden">.</div>
+          
+          <div class="p-2 align-baseline text-sm font-sans font-light">
+            technology2
+          </div>
+          <div class="last:hidden">.</div>
+          
+          <div class="p-2 align-baseline text-sm font-sans font-light">
+            technology3
+          </div>
+          <div class="last:hidden">.</div>
+          
+        </div>
+        
+      </td>
+      <td>
+        <div class="flex gap-x-1 p-2">
+          
+          <a href=https://inigo.tech target="_blank" class="hover:text-blue-700">
+            &#xe120;
+          </a>
+          
+
+          
+          <a href=https://github.com/imartinezl target="_blank" class="hover:text-blue-700">
+            &#xe035;
+          </a>
+          
+        </div>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+  </div>
+  <!-- <ul>
     
     <li>
       <a href="/projects/project_2/index.html">Project 2 title</a>
@@ -221,114 +967,10 @@
       <a href="/projects/template/index.html">Very very very very very very very very very long Title</a>
     </li>
     
-  </ul>
+  </ul> -->
+
 </div>
-        
-        <!-- 
-    <ul>
-        
-        <li>
-          <a href="/projects/project_2/index.html">
-            <div>
-              Project 2 title
-            </div>
-            <div>
-              
-                May 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="obama.jpg" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_1/index.html">
-            <div>
-              Project 1 title
-            </div>
-            <div>
-              
-                Jun 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="image.png" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_3/index.html">
-            <div>
-              Project 3 title
-            </div>
-            <div>
-              
-                Jun 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="portrait.jpg" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/project_0/index.html">
-            <div>
-              Project 0 title
-            </div>
-            <div>
-              
-                Jul 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="image.gif" alt="">
-          
-        </li>
-      
-        <li>
-          <a href="/projects/template/index.html">
-            <div>
-              Very very very very very very very very very long Title
-            </div>
-            <div>
-              
-                Jul 2021
-              
-            </div>
-            <div>
-              
-            </div>
-          </a>
-  
-          
-            <img src="html51.png" alt="">
-          
-        </li>
-      
-    </ul>
- -->
+</div>
     </div>
 </body>
 
