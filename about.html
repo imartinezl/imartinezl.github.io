@@ -4,17 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=5.0' />
+
     <!-- <title>About - imartinezl</title> -->
     <title>imartinezl - About</title>
     <meta name="description"
-    content="Description">
-    
+        content="personal-webpage">
+
     
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
     
-    
-    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+
+    <link rel="canonical" href="https://inigo.tech/about.html" />
     <link rel="stylesheet" href="/assets/css/main.css">
     <script defer src="/assets/js/alpine.min.js"></script>
 
@@ -31,29 +32,32 @@
 </script>
     
 
-    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="imartinezl" />
+    <link type="application/atom+xml" rel="alternate" href="https://inigo.tech/feed.xml" title="imartinezl" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>About | imartinezl</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Description" />
-<meta property="og:description" content="Description" />
+<meta name="description" content="personal-webpage" />
+<meta property="og:description" content="personal-webpage" />
+<link rel="canonical" href="https://inigo.tech/about.html" />
+<meta property="og:url" content="https://inigo.tech/about.html" />
 <meta property="og:site_name" content="imartinezl" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"/about.html","headline":"About","description":"Description","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"https://inigo.tech/about.html","headline":"About","description":"personal-webpage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 <body>
     <script>0</script>
+    <a class="skip-link" href="#main">Skip to main</a>
     <div class="antialiased flex flex-col overflow-hidden overscroll-auto w-screen h-screen sm:flex-row">
         <div @click.away="open = false" x-data="{ open: false }">
-    <div class="flex flex-col max-h-screen sm:w-64">
-        <div class="flex flex-row items-center justify-between p-7">
+    <div class="flex flex-col max-h-screen sm:w-64 overflow-auto">
+        <div class="sticky top-0 flex flex-row items-center justify-between p-7 bg-white">
             <a class="" href="/">
                 <div class="lowercase text-2xl font-bold sm:text-xl">
                     Iñigo Martínez
@@ -68,126 +72,111 @@
                 <span></span>
             </div>
         </div>
-        <div x-show="open" x-transition class="flex-important h-screen flex flex-col justify-between p-7">
+        <div x-show="open" x-transition class="flex-important flex flex-col h-screen justify-between p-7">
             <nav class="flex flex-col items-start">
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="/about.html" 
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04b;
-                        <div  class="text-blue-700 font-medium" 
-                            class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            About
-                        </div>
-                    </a>
-                </div>
+                <a href="/about.html" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div  class="text-blue-700 font-medium" 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        About
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="/work.html" 
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04b;
-                        <div 
-                            class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            Work
-                        </div>
-                    </a>
-                </div>
+                <a href="/work.html" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Work
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="/research.html" 
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04b;
-                        <div 
-                            class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            Research
-                        </div>
-                    </a>
-                </div>
+                <a href="/research.html" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Research
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="assets/docs/resume.pdf"  target="_blank" 
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04b;
-                        <div 
-                            class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            Resume
-                        </div>
-                    </a>
-                </div>
+                <a href="assets/docs/resume.pdf"  target="_blank" rel="noopener" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Resume
+                    </div>
+                </a>
                 
             </nav>
 
             <nav class="flex flex-col items-end sm:items-start">
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="mailto:inigomlap@gmail.com" target="_blank"
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04e;
-                        <div class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            Email
-                        </div>
-                    </a>
-                </div>
+                <a href="mailto:inigomlap@gmail.com" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Email
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="https://github.com/imartinezl" target="_blank"
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04e;
-                        <div class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            GitHub
-                        </div>
-                    </a>
-                </div>
+                <a href="https://github.com/imartinezl" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        GitHub
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="https://twitter.com/Inigoml" target="_blank"
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04e;
-                        <div class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            Twitter
-                        </div>
-                    </a>
-                </div>
+                <a href="https://twitter.com/Inigoml" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Twitter
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="https://www.linkedin.com/in/imartinezl/" target="_blank"
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04e;
-                        <div class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            LinkedIn
-                        </div>
-                    </a>
-                </div>
+                <a href="https://www.linkedin.com/in/imartinezl/" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        LinkedIn
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="https://scholar.google.es/citations?user=_VGGVEgAAAAJ" target="_blank"
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04e;
-                        <div class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            Scholar
-                        </div>
-                    </a>
-                </div>
+                <a href="https://scholar.google.es/citations?user=_VGGVEgAAAAJ" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Scholar
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="http://arxiv.org/a/martinez_i_3" target="_blank"
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04e;
-                        <div class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            arXiv
-                        </div>
-                    </a>
-                </div>
+                <a href="http://arxiv.org/a/martinez_i_3" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        arXiv
+                    </div>
+                </a>
                 
-                <div class="group text-2xl sm:text-lg">
-                    <a href="https://www.researchgate.net/profile/Inigo-Martinez-2" target="_blank"
-                        class="flex items-start pr-3 py-2 sm:py-0">
-                        &#xe04e;
-                        <div class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
-                            ResearchGate
-                        </div>
-                    </a>
-                </div>
+                <a href="https://www.researchgate.net/profile/Inigo-Martinez-2" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        ResearchGate
+                    </div>
+                </a>
                 
             </nav>
         </div>
@@ -198,9 +187,9 @@
         <div class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow divide-y space-y-7 pb-48 sm:pb-14">
 
     <div class="text-left sm:text-left max-w-prose">
-        <p>Hi, my name is Iñigo and I’m a data scientist and researcher on <strong>machine learning and artificial intelligence</strong>.
+        <p>Hi! my name is Iñigo and I’m a data scientist and researcher on <strong>machine learning and artificial intelligence</strong>.
 <br /><br />
-I have an extensive background working with large and varied datasets and using advanced statistical methods.
+I have a background working with large and varied datasets and using advanced statistical methods.
 I <strong>transform data into valuable and tangible insights</strong> through data science techniques, machine learning and visualization.</p>
 
 <!---
@@ -224,42 +213,42 @@ I have a strong interest on
         </div>
         <div class="flex flex-wrap max-w-prose">
             
-            <a href=https://en.wikipedia.org/wiki/Machine_learning target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Machine_learning target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 machine learning
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Time_series target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Time_series target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 time series
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Functional_data_analysis target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Functional_data_analysis target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 functional data analysis
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Anomaly_detection target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Anomaly_detection target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 anomaly detection
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Bayesian_statistics target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Bayesian_statistics target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 Bayesian statistics
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Agent-based_model target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Agent-based_model target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 agent-based simulation
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Data_visualization target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Data_visualization target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 data visualization
             </a>
             
-            <a href=https://en.wikipedia.org/wiki/Analytics target="_blank"
+            <a href=https://en.wikipedia.org/wiki/Analytics target="_blank" rel="noopener"
                 class="px-3 py-1 mr-1 my-1 text-sm border-2 rounded-full hover:bg-blue-100 hover:border-blue-300">
                 data analytics
             </a>
@@ -274,7 +263,7 @@ I have a strong interest on
         <div class="flex flex-col gap-6">
             
             <div class="space-y-0.5">
-                <a href=https://www.vicomtech.org/en/ target="_blank"
+                <a href=https://www.vicomtech.org/en/ target="_blank" rel="noopener"
                     class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     Vicomtech Research Center
                 </a>
@@ -291,7 +280,7 @@ I have a strong interest on
             <!-- San Sebastian, Spain -->
             
             <div class="space-y-0.5">
-                <a href=https://www.siemensgamesa.com/en-int/products-and-services/service-wind/diagnostics target="_blank"
+                <a href=https://www.siemensgamesa.com/en-int/products-and-services/service-wind/diagnostics target="_blank" rel="noopener"
                     class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     NEM, Siemens Gamesa Renewable Energy
                 </a>
@@ -308,7 +297,7 @@ I have a strong interest on
             <!-- San Sebastian, Spain -->
             
             <div class="space-y-0.5">
-                <a href=https://www.media.mit.edu/ target="_blank"
+                <a href=https://www.media.mit.edu/ target="_blank" rel="noopener"
                     class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     MIT Media Lab
                 </a>
@@ -316,7 +305,7 @@ I have a strong interest on
                     City Science
                 </div>
                 <div class="text-sm">
-                    Research Assistant & Master's Thesis
+                    Visiting Research Assistant & Master's Thesis
                 </div>
                 <div class="text-sm text-gray-600">
                     Sep. 2016 - May. 2017
@@ -325,7 +314,7 @@ I have a strong interest on
             <!-- Boston, US -->
             
             <div class="space-y-0.5">
-                <a href=https://www.ceit.es/en/ target="_blank"
+                <a href=https://www.ceit.es/en/ target="_blank" rel="noopener"
                     class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     CEIT Research Center
                 </a>
@@ -342,7 +331,7 @@ I have a strong interest on
             <!-- San Sebastian, Spain -->
             
             <div class="space-y-0.5">
-                <a href=https://www.nanogune.eu/en/research/groups/nanomagnetism target="_blank"
+                <a href=https://www.nanogune.eu/en/research/groups/nanomagnetism target="_blank" rel="noopener"
                     class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                     CIC nanoGUNE
                 </a>
@@ -369,7 +358,7 @@ I have a strong interest on
             
             <div class="flex flex-col gap-4">
                 <div>
-                    <a href=https://www.unav.edu/en/home target="_blank"
+                    <a href=https://www.unav.edu/en/home target="_blank" rel="noopener"
                         class="font-bold border-b-2 border-blue-500 hover:text-blue-700">
                         University of Navarra - Tecnun School of Engineering
                     </a>
@@ -627,19 +616,19 @@ I have a strong interest on
                     </div>
                     
                     <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
-                        Laser cutter
+                        Additive manufacturing
                     </div>
                     
                     <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
-                        Water jet
+                        Laser cutting
                     </div>
                     
                     <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
-                        3D printing
+                        Waterjet
                     </div>
                     
                     <div class="pl-1.5 sm:pl-3 my-1 font-sans text-xs sm:text-sm">
-                        CNC
+                        CNC machining
                     </div>
                     
                 </div>
@@ -885,19 +874,19 @@ I have a strong interest on
                 </div>
                 
                 <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
-                    Laser cutter
+                    Additive manufacturing
                 </div>
                 
                 <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
-                    Water jet
+                    Laser cutting
                 </div>
                 
                 <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
-                    3D printing
+                    Waterjet
                 </div>
                 
                 <div class="px-1.5 sm:px-3 ml-2 my-1 font-sans text-sm sm:text-sm">
-                    CNC
+                    CNC machining
                 </div>
                 
             </div>
@@ -1138,19 +1127,19 @@ I have a strong interest on
                 </div>
                 
                 <div class="text-sm font-sans font-light">
-                    Laser cutter
+                    Additive manufacturing
                 </div>
                 
                 <div class="text-sm font-sans font-light">
-                    Water jet
+                    Laser cutting
                 </div>
                 
                 <div class="text-sm font-sans font-light">
-                    3D printing
+                    Waterjet
                 </div>
                 
                 <div class="text-sm font-sans font-light">
-                    CNC
+                    CNC machining
                 </div>
                 
             </div>
