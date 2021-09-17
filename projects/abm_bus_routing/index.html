@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=5.0' />
+
+    <!-- <title>Bus routing agent based simulation - imartinezl</title> -->
+    <title>imartinezl - Bus routing agent based simulation</title>
+    <meta name="description"
+        content="">
+
+    
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    
+
+    <link rel="canonical" href="http://localhost:4000/projects/abm_bus_routing/index.html" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script defer src="/assets/js/alpine.min.js"></script>
+
+
+    
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="imartinezl" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Bus routing agent based simulation | imartinezl</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Bus routing agent based simulation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="personal-webpage" />
+<meta property="og:description" content="personal-webpage" />
+<link rel="canonical" href="http://localhost:4000/projects/abm_bus_routing/" />
+<meta property="og:url" content="http://localhost:4000/projects/abm_bus_routing/" />
+<meta property="og:site_name" content="imartinezl" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-01T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Bus routing agent based simulation" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/abm_bus_routing/"},"@type":"BlogPosting","url":"http://localhost:4000/projects/abm_bus_routing/","headline":"Bus routing agent based simulation","dateModified":"2019-11-01T00:00:00+01:00","datePublished":"2019-11-01T00:00:00+01:00","description":"personal-webpage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <script>0</script>
+    <a class="skip-link" href="#main">Skip to main</a>
+    <div id="main" class="antialiased flex flex-col overflow-hidden overscroll-auto w-screen h-screen sm:flex-row">
+        <div @click.away="open = false" x-data="{ open: false }">
+    <div class="flex flex-col max-h-screen sm:w-64 overflow-auto">
+        <div class="sticky top-0 flex flex-row items-center justify-between p-7 bg-white">
+            <a class="" href="/">
+                <div class="lowercase text-2xl font-bold sm:text-xl">
+                    Iñigo Martínez
+                </div>
+                <div class="text-xl sm:text-lg">
+                    Ph.D. | data scientist
+                </div>
+            </a>
+            <div id="nav-icon" @click="open = !open" :class="{'open': open}" class="sm:hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div x-show="open" x-transition class="flex-important flex flex-col h-screen justify-between p-7">
+            <nav class="flex flex-col items-start">
+                
+                <a href="/about.html" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        About
+                    </div>
+                </a>
+                
+                <a href="/work.html" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Work
+                    </div>
+                </a>
+                
+                <a href="/research.html" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Research
+                    </div>
+                </a>
+                
+                <a href="assets/docs/resume.pdf"  target="_blank" rel="noopener" 
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04b;</span>
+                    <div 
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Resume
+                    </div>
+                </a>
+                
+            </nav>
+
+            <nav class="flex flex-col items-end sm:items-start">
+                
+                <a href="mailto:inigomlap@gmail.com" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Email
+                    </div>
+                </a>
+                
+                <a href="https://github.com/imartinezl" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        GitHub
+                    </div>
+                </a>
+                
+                <a href="https://twitter.com/Inigoml" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Twitter
+                    </div>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/imartinezl/" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        LinkedIn
+                    </div>
+                </a>
+                
+                <a href="https://scholar.google.es/citations?user=_VGGVEgAAAAJ" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        Scholar
+                    </div>
+                </a>
+                
+                <a href="http://arxiv.org/a/martinez_i_3" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        arXiv
+                    </div>
+                </a>
+                
+                <a href="https://www.researchgate.net/profile/Inigo-Martinez-2" target="_blank" rel="noopener"
+                    class="flex items-start py-2 sm:py-0 group text-2xl sm:text-lg">
+                    <span>&#xe04e;</span>
+                    <div
+                        class="transition duration-75 ease-in-out border-b-2 border-white group-hover:border-blue-700 group-hover:font-medium">
+                        ResearchGate
+                    </div>
+                </a>
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- <embed src= "assets/docs/resume.pdf" type="application/pdf" width="100%" height="100%"> -->
+        <div class="p-7 sm:px-7 md:px-10 lg:px-20 overflow-auto flex flex-col flex-grow pb-24 sm:pb-14">
+
+  <div class="flex flex-col flex-grow divide-y justify-between max-w-screen-xl overscroll-auto">
+
+    <div class="divide-y">
+
+      <div class="flex flex-row justify-between items-end">
+        <p class="text-xl font-bold sm:text-lg">
+          Bus routing agent based simulation
+        </p>
+
+        <div class="text-xl flex pl-4 gap-x-2">
+          
+
+          
+          <a href=https://github.com/imartinezl/discrete-event-simulation target="_blank" rel="noopener" class="hover:text-blue-700">
+            &#xe035;
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <div>
+        <div class="py-3 sm:max-h-full md:max-w-2xl">
+          
+          <img src="abm_bus_routing_001.gif" class="">
+          
+          
+        </div>
+      </div>
+      
+
+      <div class="divide-y md:divide-y-0 md:grid md:grid-cols-2 md:gap-2 md:justify-between">
+
+        
+
+        <div class="py-3 text-sm md:order-first flex flex-col gap-2">
+
+          
+          <div class="flex flex-wrap gap-x-1 items-baseline">
+            <div class="text-gray-700">
+              Date |
+            </div>
+            <div class="p-0.5">
+              
+              Nov 2019
+              
+            </div>
+          </div>
+          
+
+
+          
+          <div class="flex flex-wrap gap-x-1 items-baseline">
+            <div class="text-gray-700">
+              Tags | 
+            </div>
+            
+            
+            <a href=/tags/agent-based-simulation/
+              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              #agent-based simulation
+            </a>
+            
+            
+            <a href=/tags/optimization/
+              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              #optimization
+            </a>
+            
+            
+            <a href=/tags/routing/
+              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              #routing
+            </a>
+            
+            
+            <a href=/tags/transportation/
+              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              #transportation
+            </a>
+            
+          </div>
+          
+
+          
+
+          
+          
+          <div class="flex flex-wrap gap-x-1">
+            <div class="text-gray-700">
+              Technologies |
+            </div>
+            
+            <div class="">
+              python
+            </div>
+            <span class="last:hidden">·</span>
+            
+            <div class="">
+              simpy
+            </div>
+            <span class="last:hidden">·</span>
+            
+            <div class="">
+              numpy
+            </div>
+            <span class="last:hidden">·</span>
+            
+            <div class="">
+              pandas
+            </div>
+            <span class="last:hidden">·</span>
+            
+            <div class="">
+              matplotlib
+            </div>
+            <span class="last:hidden">·</span>
+            
+            <div class="">
+              processing
+            </div>
+            <span class="last:hidden">·</span>
+            
+          </div>
+          
+
+
+        </div>
+
+      </div>
+
+      
+      
+
+
+      
+      
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+
+
+          
+
+      
+      
+
+      
+
+      
+
+      
+      <div class="py-3 flex flex-col">
+        <div class="pb-2.5 text-gray-700 text-sm">
+          Related projects
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-4 
+          sm:max-w-screen-sm lg:max-w-screen-xl">
+          
+
+
+          <a href="/projects/abm_air_quality/index.html" class=" 
+            flex flex-wrap flex-col gap-2
+            p-2 border rounded group relative
+            hover:border-blue-700">
+            <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
+              archABM | architectural agent based modeling
+            </div>
+            <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
+               <span>#agent-based simulation</span> 
+            </div>
+            <div class="absolute bottom-0 right-1 group-hover:text-blue-700">
+              &#xe04e;
+            </div>
+          </a>
+          
+          
+          
+
+
+          
+
+      
+      
+
+      
+
+      
+
+      
+
+
+          <a href="/projects/abm_autonomous_bike/index.html" class=" 
+            flex flex-wrap flex-col gap-2
+            p-2 border rounded group relative
+            hover:border-blue-700">
+            <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
+              Autonomous bicycle-sharing system simulation
+            </div>
+            <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
+               <span>#agent-based simulation</span>  <span>#transportation</span> 
+            </div>
+            <div class="absolute bottom-0 right-1 group-hover:text-blue-700">
+              &#xe04e;
+            </div>
+          </a>
+          
+          
+          
+
+
+          
+
+      
+      
+
+      
+
+      
+
+      
+
+
+          <a href="/projects/thermometry_surrogate_model/index.html" class=" 
+            flex flex-wrap flex-col gap-2
+            p-2 border rounded group relative
+            hover:border-blue-700">
+            <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
+              Radiation thermometry surrogate model
+            </div>
+            <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
+               <span>#optimization</span> 
+            </div>
+            <div class="absolute bottom-0 right-1 group-hover:text-blue-700">
+              &#xe04e;
+            </div>
+          </a>
+          
+          
+          
+
+
+          
+
+      
+      
+
+      
+
+      
+
+      
+
+
+          <a href="/projects/abm_sim_js/index.html" class=" 
+            flex flex-wrap flex-col gap-2
+            p-2 border rounded group relative
+            hover:border-blue-700">
+            <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
+              SimJS | process-based discrete-event simulation framework
+            </div>
+            <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
+               <span>#agent-based simulation</span> 
+            </div>
+            <div class="absolute bottom-0 right-1 group-hover:text-blue-700">
+              &#xe04e;
+            </div>
+          </a>
+          
+          
+          
+
+          
+        </div>
+      </div>
+      
+      
+
+    </div>
+
+
+    
+    
+    <div class="flex justify-between gap-x-4 py-3">
+      
+      <a href="/projects/formula_one/index.html" class="flex min-w-0 gap-x-1 hover:text-gray-600">
+        <p>&#xe04a;</p>
+        <p class="">Prev</p>
+        
+      </a>
+      
+
+      
+      <a href="/projects/formula_one_viewer/index.html" class="flex min-w-0 gap-x-1 hover:text-gray-600">
+        
+        <p class="">Next</p>
+        <p>&#xe04b;</p>
+      </a>
+      
+    </div>
+    
+
+
+    <!-- <a href="/work.html" class="flex items-center sm:hidden py-2 hover:text-gray-600">
+    &#xe04d; Back to projects
+    &#xe124;
+  </a> -->
+
+  </div>
+</div>
+    </div>
+</body>
+
+</html>
