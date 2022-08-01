@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=5.0' />
 
-    <!-- <title>Diffeomorphic temporal transformers - imartinezl</title> -->
-    <title>imartinezl - Diffeomorphic temporal transformers</title>
+    <!-- <title>closed-form diffeomorphic transformations - imartinezl</title> -->
+    <title>imartinezl - closed-form diffeomorphic transformations</title>
     <meta name="description"
-        content="">
+        content="Time series alignment methods call for highly expressive, differentiable and invertible warping functions which preserve temporal topology, i.e diffeomorphis...">
 
     
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
@@ -34,21 +34,21 @@
 
     <link type="application/atom+xml" rel="alternate" href="https://inigo.tech/feed.xml" title="imartinezl" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Diffeomorphic temporal transformers | imartinezl</title>
+<title>closed-form diffeomorphic transformations | imartinezl</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Diffeomorphic temporal transformers" />
+<meta property="og:title" content="closed-form diffeomorphic transformations" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="personal-webpage" />
-<meta property="og:description" content="personal-webpage" />
+<meta name="description" content="Time series alignment methods call for highly expressive, differentiable and invertible warping functions which preserve temporal topology, i.e diffeomorphisms. Diffeomorphic warping functions can be generated from the integration of velocity fields governed by an ordinary differential equation (ODE). Gradient-based optimization frameworks containing diffeomorphic transformations require to calculate derivatives to the differential equation’s solution with respect to the model parameters, i.e. sensitivity analysis. Unfortunately, deep learning frameworks typically lack automatic-differentiation-compatible sensitivity analysis methods; and implicit functions, such as the solution of ODE, require particular care. Current solutions appeal to adjoint sensitivity methods, ad-hoc numerical solvers or ResNet’s Eulerian discretization. In this work, we present a closed-form expression for the ODE solution and its gradient under continuous piecewise-affine (CPA) velocity functions. We present a highly optimized implementation of the results on CPU and GPU. Furthermore, we conduct extensive experiments on several datasets to validate the generalization ability of our model to unseen data for time-series joint alignment. Results show significant improvements both in terms of efficiency and accuracy. 📝 Paper | 🖼️ Poster | 📊 Slides | 🎥 Video | 📦 Code" />
+<meta property="og:description" content="Time series alignment methods call for highly expressive, differentiable and invertible warping functions which preserve temporal topology, i.e diffeomorphisms. Diffeomorphic warping functions can be generated from the integration of velocity fields governed by an ordinary differential equation (ODE). Gradient-based optimization frameworks containing diffeomorphic transformations require to calculate derivatives to the differential equation’s solution with respect to the model parameters, i.e. sensitivity analysis. Unfortunately, deep learning frameworks typically lack automatic-differentiation-compatible sensitivity analysis methods; and implicit functions, such as the solution of ODE, require particular care. Current solutions appeal to adjoint sensitivity methods, ad-hoc numerical solvers or ResNet’s Eulerian discretization. In this work, we present a closed-form expression for the ODE solution and its gradient under continuous piecewise-affine (CPA) velocity functions. We present a highly optimized implementation of the results on CPU and GPU. Furthermore, we conduct extensive experiments on several datasets to validate the generalization ability of our model to unseen data for time-series joint alignment. Results show significant improvements both in terms of efficiency and accuracy. 📝 Paper | 🖼️ Poster | 📊 Slides | 🎥 Video | 📦 Code" />
 <link rel="canonical" href="https://inigo.tech/projects/temporal_transformers/" />
 <meta property="og:url" content="https://inigo.tech/projects/temporal_transformers/" />
 <meta property="og:site_name" content="imartinezl" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-01T00:00:00+02:00" />
+<meta property="article:published_time" content="2022-01-01T00:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Diffeomorphic temporal transformers" />
+<meta property="twitter:title" content="closed-form diffeomorphic transformations" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://inigo.tech/projects/temporal_transformers/"},"@type":"BlogPosting","url":"https://inigo.tech/projects/temporal_transformers/","headline":"Diffeomorphic temporal transformers","dateModified":"2021-08-01T00:00:00+02:00","datePublished":"2021-08-01T00:00:00+02:00","description":"personal-webpage","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://inigo.tech/projects/temporal_transformers/"},"@type":"BlogPosting","url":"https://inigo.tech/projects/temporal_transformers/","headline":"closed-form diffeomorphic transformations","dateModified":"2022-01-01T00:00:00+01:00","datePublished":"2022-01-01T00:00:00+01:00","description":"Time series alignment methods call for highly expressive, differentiable and invertible warping functions which preserve temporal topology, i.e diffeomorphisms. Diffeomorphic warping functions can be generated from the integration of velocity fields governed by an ordinary differential equation (ODE). Gradient-based optimization frameworks containing diffeomorphic transformations require to calculate derivatives to the differential equation’s solution with respect to the model parameters, i.e. sensitivity analysis. Unfortunately, deep learning frameworks typically lack automatic-differentiation-compatible sensitivity analysis methods; and implicit functions, such as the solution of ODE, require particular care. Current solutions appeal to adjoint sensitivity methods, ad-hoc numerical solvers or ResNet’s Eulerian discretization. In this work, we present a closed-form expression for the ODE solution and its gradient under continuous piecewise-affine (CPA) velocity functions. We present a highly optimized implementation of the results on CPU and GPU. Furthermore, we conduct extensive experiments on several datasets to validate the generalization ability of our model to unseen data for time-series joint alignment. Results show significant improvements both in terms of efficiency and accuracy. 📝 Paper | 🖼️ Poster | 📊 Slides | 🎥 Video | 📦 Code","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -190,25 +190,43 @@
 
   <div class="flex flex-col flex-grow divide-y justify-between max-w-screen-xl overscroll-auto">
 
-    <div class="divide-y">
+    <div class="divide-y" x-data="{url: ''}">
 
       <div class="flex flex-row justify-between items-end">
         <p class="text-xl font-bold sm:text-lg">
-          Diffeomorphic temporal transformers
+          closed-form diffeomorphic transformations
         </p>
 
         <div class="text-xl flex pl-4 gap-x-2">
           
+          <a href=https://arxiv.org/abs/2206.08107 target="_blank" rel="noopener" class="hover:text-blue-700">
+            &#xe120;
+          </a>
+          
 
           
+          <a href=https://github.com/imartinezl/difw target="_blank" rel="noopener" class="hover:text-blue-700">
+            &#xe035;
+          </a>
+          
+
+          
+          <a href=article.pdf target="_blank" rel="noopener" class="hover:text-blue-700">
+            &#xe134; 
+          </a>
+          
+
         </div>
       </div>
 
       
       <div>
-        <div class="py-3 sm:max-h-full md:max-w-2xl">
+        <div class="flex py-3 sm:max-h-full md:max-w-2xl">
           
-          <img src="temporal_transformers_002.jpg" class="">
+          <video controls autoplay muted>
+            <source src="temporal_transformers_007.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           
           
         </div>
@@ -228,7 +246,7 @@
             </div>
             <div class="p-0.5">
               
-              Aug 2021
+              Jan 2022
               
             </div>
           </div>
@@ -238,54 +256,54 @@
           
           <div class="flex flex-wrap gap-x-1 items-baseline">
             <div class="text-gray-700">
-              Tags | 
+              Tags |
             </div>
             
             
             <a href=/tags/time-series/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #time series
             </a>
             
             
             <a href=/tags/warping/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #warping
             </a>
             
             
             <a href=/tags/diffeomorphism/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #diffeomorphism
             </a>
             
             
             <a href=/tags/velocity-fields/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #velocity fields
             </a>
             
             
             <a href=/tags/differential-geometry/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #differential geometry
             </a>
             
             
             <a href=/tags/unsupervised-learning/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #unsupervised learning
             </a>
             
             
             <a href=/tags/machine-learning/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #machine learning
             </a>
             
             
             <a href=/tags/deep-learning/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #deep learning
             </a>
             
@@ -340,8 +358,68 @@
       </div>
 
       
-      
+      <div class="md:grid md:grid-cols-2 md:gap-x-8">
+        
+        
+        <div id="content" class="py-3 text-sm text-justify md:max-w-2xl">
+          <p>Time series alignment methods call for highly expressive, differentiable and invertible warping functions which preserve temporal topology, i.e diffeomorphisms. Diffeomorphic warping functions can be generated from the integration of velocity fields governed by an ordinary differential equation (ODE). Gradient-based optimization frameworks containing diffeomorphic transformations require to calculate derivatives to the differential equation’s solution with respect to the model parameters, i.e. sensitivity analysis. Unfortunately, deep learning frameworks typically lack automatic-differentiation-compatible sensitivity analysis methods; and implicit functions, such as the solution of ODE, require particular care. Current solutions appeal to adjoint sensitivity methods, ad-hoc numerical solvers or ResNet’s Eulerian discretization.<br /><br />
+In this work, we present a closed-form expression for the ODE solution and its gradient under continuous piecewise-affine (CPA) velocity functions. We present a highly optimized implementation of the results on CPU and GPU. Furthermore, we conduct extensive experiments on several datasets to validate the generalization ability of our model to unseen data for time-series joint alignment. Results show significant improvements both in terms of efficiency and accuracy.<br /><br />
+<a href="https://arxiv.org/abs/2206.08107">📝 Paper</a> | <a href="https://inigo.tech/closed-diffeomorphic/assets/poster.pdf">🖼️ Poster</a> | <a href="https://inigo.tech/closed-diffeomorphic/assets/slides.pdf">📊 Slides</a> | <a href="https://recorder-v3.slideslive.com/?share=69811&amp;s=6ff59166-61cf-4cb8-99be-4b2f662bd538">🎥 Video</a> | <a href="https://github.com/imartinezl/difw">📦 Code</a></p>
 
+
+
+          
+          <div class="pt-3">
+
+            
+            <div class="flex">
+              <a href=https://arxiv.org/abs/2206.08107 target="_blank" rel="noopener" class="truncate hover:text-blue-700 hover:tracking-1 hover:font-medium">
+                &#xe120; https://arxiv.org/abs/2206.08107
+              </a>
+            </div>
+            
+
+            
+            <div class="flex">
+              <a href=https://github.com/imartinezl/difw target="_blank" rel="noopener" class="truncate hover:text-blue-700 hover:tracking-1 hover:font-medium">
+                &#xe035; https://github.com/imartinezl/difw
+              </a>
+            </div>
+            
+
+            
+            <div class="flex">
+              <a href=article.pdf target="_blank" rel="noopener" class="truncate hover:text-blue-700 hover:tracking-1 hover:font-medium">
+                &#xe134; article.pdf
+              </a>
+            </div>
+            
+
+          </div>
+          
+        </div>
+        
+
+        
+        <div class="md:max-h-96 md:h-96 hidden md:block p-3">
+          <img x-show="!url" src="temporal_transformers_001.jpg" class="md:max-h-full"/>
+          <img :src="url" class="md:max-h-full"/>
+        </div>
+        
+      </div>
+      
+      
+      
+        <div class="flex flex-wrap items-start">
+          
+          <img src=temporal_transformers_001.jpg class="my-4 md:m-2 md:w-32 rounded border-2 border-opacity-0 hover:border-opacity-100 border-blue-600" 
+            x-on:click="url = 'temporal_transformers_001.jpg'" x-on:mouseover="url = 'temporal_transformers_001.jpg'" style="cursor: pointer"/>
+          
+          <img src=temporal_transformers_002.jpg class="my-4 md:m-2 md:w-32 rounded border-2 border-opacity-0 hover:border-opacity-100 border-blue-600" 
+            x-on:click="url = 'temporal_transformers_002.jpg'" x-on:mouseover="url = 'temporal_transformers_002.jpg'" style="cursor: pointer"/>
+          
+        </div>
+      
 
       
       
@@ -402,7 +480,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Radiation thermometry surrogate model
+              radiation thermometry surrogate model
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#machine learning</span> 
@@ -443,7 +521,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Time series clustering
+              time series clustering for data streams
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#time series</span>  <span>#warping</span>  <span>#unsupervised learning</span>  <span>#machine learning</span>  <span>#deep learning</span> 
@@ -474,7 +552,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Solar cells electroluminiscence image segmentation
+              solar cells electroluminiscence image segmentation
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#machine learning</span>  <span>#deep learning</span>  <span>#unsupervised learning</span> 
@@ -575,7 +653,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Data science project methodologies
+              data science project methodologies
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#machine learning</span> 

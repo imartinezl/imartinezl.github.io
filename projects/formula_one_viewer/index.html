@@ -190,7 +190,7 @@
 
   <div class="flex flex-col flex-grow divide-y justify-between max-w-screen-xl overscroll-auto">
 
-    <div class="divide-y">
+    <div class="divide-y" x-data="{url: ''}">
 
       <div class="flex flex-row justify-between items-end">
         <p class="text-xl font-bold sm:text-lg">
@@ -209,15 +209,18 @@
             &#xe035;
           </a>
           
+
+          
+
         </div>
       </div>
 
       
       <div>
-        <div class="py-3 sm:max-h-full md:max-w-2xl">
+        <div class="flex py-3 sm:max-h-full md:max-w-2xl">
+          
           
           <img src="formula_one_viewer_001.gif" class="">
-          
           
         </div>
       </div>
@@ -246,54 +249,48 @@
           
           <div class="flex flex-wrap gap-x-1 items-baseline">
             <div class="text-gray-700">
-              Tags | 
+              Tags |
             </div>
             
             
             <a href=/tags/formula1/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #formula1
             </a>
             
             
             <a href=/tags/visualization/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #visualization
             </a>
             
             
             <a href=/tags/standings/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #standings
             </a>
             
             
-            <a href=/tags/scoring-system/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
-              #scoring system
-            </a>
-            
-            
             <a href=/tags/data/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #data
             </a>
             
             
             <a href=/tags/analysis/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #analysis
             </a>
             
             
             <a href=/tags/statistics/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #statistics
             </a>
             
             
             <a href=/tags/sports/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #sports
             </a>
             
@@ -348,8 +345,15 @@
       </div>
 
       
-      
+      <div class="md:grid md:grid-cols-2 md:gap-x-8">
+        
+        
 
+        
+      </div>
+      
+      
+      
 
       
       
@@ -450,7 +454,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Mathematical sculptures
+              mathematical sculptures
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span> 
@@ -481,7 +485,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Mortality index visualization - Spain
+              mortality index visualization - Spain
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span>  <span>#data</span> 
@@ -522,7 +526,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Bike trips visualization - Madrid
+              bike trips visualization - Madrid
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span> 
@@ -553,7 +557,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Evolution of airbnb rentals - Basque Country
+              evolution of airbnb rentals - Basque Country
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span> 

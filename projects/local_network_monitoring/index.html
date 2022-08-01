@@ -9,7 +9,7 @@
     <!-- <title>Wi-Fi signal data gathering, analysis and visualization - imartinezl</title> -->
     <title>imartinezl - Wi-Fi signal data gathering, analysis and visualization</title>
     <meta name="description"
-        content="">
+        content="Wi-Fi signal data gathering, analysis and visualization. The main goal of this project is to check the quality signal and coverage of a local Wi-Fi router. W...">
 
     
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
@@ -38,8 +38,8 @@
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Wi-Fi signal data gathering, analysis and visualization" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="personal-webpage" />
-<meta property="og:description" content="personal-webpage" />
+<meta name="description" content="Wi-Fi signal data gathering, analysis and visualization. The main goal of this project is to check the quality signal and coverage of a local Wi-Fi router. Wi-Fi network analysis iwlist: detailed wireless information from a wireless interface python-iwlist: python scanner and parser for wireless networks Connected devices nmap: open source utility for network discovery and security auditing nmap python: python library which helps in using nmap port scanner" />
+<meta property="og:description" content="Wi-Fi signal data gathering, analysis and visualization. The main goal of this project is to check the quality signal and coverage of a local Wi-Fi router. Wi-Fi network analysis iwlist: detailed wireless information from a wireless interface python-iwlist: python scanner and parser for wireless networks Connected devices nmap: open source utility for network discovery and security auditing nmap python: python library which helps in using nmap port scanner" />
 <link rel="canonical" href="https://inigo.tech/projects/local_network_monitoring/" />
 <meta property="og:url" content="https://inigo.tech/projects/local_network_monitoring/" />
 <meta property="og:site_name" content="imartinezl" />
@@ -48,7 +48,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Wi-Fi signal data gathering, analysis and visualization" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://inigo.tech/projects/local_network_monitoring/"},"@type":"BlogPosting","url":"https://inigo.tech/projects/local_network_monitoring/","headline":"Wi-Fi signal data gathering, analysis and visualization","dateModified":"2019-08-01T00:00:00+02:00","datePublished":"2019-08-01T00:00:00+02:00","description":"personal-webpage","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://inigo.tech/projects/local_network_monitoring/"},"@type":"BlogPosting","url":"https://inigo.tech/projects/local_network_monitoring/","headline":"Wi-Fi signal data gathering, analysis and visualization","dateModified":"2019-08-01T00:00:00+02:00","datePublished":"2019-08-01T00:00:00+02:00","description":"Wi-Fi signal data gathering, analysis and visualization. The main goal of this project is to check the quality signal and coverage of a local Wi-Fi router. Wi-Fi network analysis iwlist: detailed wireless information from a wireless interface python-iwlist: python scanner and parser for wireless networks Connected devices nmap: open source utility for network discovery and security auditing nmap python: python library which helps in using nmap port scanner","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -190,7 +190,7 @@
 
   <div class="flex flex-col flex-grow divide-y justify-between max-w-screen-xl overscroll-auto">
 
-    <div class="divide-y">
+    <div class="divide-y" x-data="{url: ''}">
 
       <div class="flex flex-row justify-between items-end">
         <p class="text-xl font-bold sm:text-lg">
@@ -205,15 +205,18 @@
             &#xe035;
           </a>
           
+
+          
+
         </div>
       </div>
 
       
       <div>
-        <div class="py-3 sm:max-h-full md:max-w-2xl">
+        <div class="flex py-3 sm:max-h-full md:max-w-2xl">
+          
           
           <img src="local_network_monitoring_001.png" class="">
-          
           
         </div>
       </div>
@@ -242,36 +245,36 @@
           
           <div class="flex flex-wrap gap-x-1 items-baseline">
             <div class="text-gray-700">
-              Tags | 
+              Tags |
             </div>
             
             
             <a href=/tags/monitoring/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #monitoring
             </a>
             
             
             <a href=/tags/analysis/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #analysis
             </a>
             
             
             <a href=/tags/visualization/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #visualization
             </a>
             
             
             <a href=/tags/wi-fi/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #wi-fi
             </a>
             
             
             <a href=/tags/network/
-              class="rounded border border-opacity-10 hover:border-opacity-100 hover:border-blue-700 hover:text-blue-700">
+              class="rounded border-2 border-opacity-10 hover:border-opacity-100 hover:border-blue-700 text-blue-700 hover:tracking-1 hover:font-medium">
               #network
             </a>
             
@@ -321,8 +324,66 @@
       </div>
 
       
-      
+      <div class="md:grid md:grid-cols-2 md:gap-x-8">
+        
+        
+        <div id="content" class="py-3 text-sm text-justify md:max-w-2xl">
+          <p>Wi-Fi signal data gathering, analysis and visualization. The main goal of this project is to check the quality signal and coverage of a local Wi-Fi router.<br />
+<br /><em>Wi-Fi network analysis</em></p>
+<ul>
+  <li><a href="https://linux.die.net/man/8/iwlist">iwlist</a>: detailed wireless information from a wireless interface</li>
+  <li><a href="https://github.com/iancoleman/python-iwlist">python-iwlist</a>: python scanner and parser for wireless networks</li>
+</ul>
 
+<p><br /><em>Connected devices</em></p>
+<ul>
+  <li><a href="https://nmap.org/">nmap</a>: open source utility for network discovery and security auditing</li>
+  <li><a href="https://xael.org/pages/python-nmap-en.html">nmap python</a>: python library which helps in using nmap port scanner</li>
+</ul>
+
+<p><br /><em>Data exploration</em></p>
+<ul>
+  <li><a href="https://www.r-project.org/">R</a> - Programming Language / 3.6.0</li>
+  <li><a href="https://www.rstudio.com/">RStudio</a> - IDE for R / 1.2.1335</li>
+  <li><a href="https://dplyr.tidyverse.org/">dplyr</a> - A grammar of data manipulation / 0.8.1</li>
+  <li><a href="https://ggplot2.tidyverse.org/">ggplot2</a> - Create graphics with R / 3.1.1</li>
+  <li><a href="https://github.com/jeroen/jsonlite">jsonlite</a> - JSON Parser and Generator for R / 1.6</li>
+  <li><a href="https://lubridate.tidyverse.org/">lubridate</a> - Library for date-times / 1.7.4</li>
+</ul>
+
+<p><br /><em>Deployment</em><br />
+The python script <a href="wifi_analysis2.py">wifi_analysis2.py</a> was run every minute on a <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">RaspberryPi3B</a> using <a href="https://crontab.guru/">crontab</a>, a cron (time-based job scheduler) expression editor.</p>
+
+<p><br /><em>Data visualization</em><br />
+Every minute, requested data was appended to a csv file. In order to visualize this information, a local server was designed using Node.js <a href="https://expressjs.com/">express</a> server. This server makes a call to request the csv data and builts a plot using <a href="https://plot.ly/javascript/">Plotly.js</a></p>
+
+
+
+          
+          <div class="pt-3">
+
+            
+
+            
+            <div class="flex">
+              <a href=https://github.com/imartinezl/local-network-monitoring target="_blank" rel="noopener" class="truncate hover:text-blue-700 hover:tracking-1 hover:font-medium">
+                &#xe035; https://github.com/imartinezl/local-network-monitoring
+              </a>
+            </div>
+            
+
+            
+
+          </div>
+          
+        </div>
+        
+
+        
+      </div>
+      
+      
+      
 
       
       
@@ -423,7 +484,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Mathematical sculptures
+              mathematical sculptures
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span> 
@@ -454,7 +515,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Mortality index visualization - Spain
+              mortality index visualization - Spain
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span> 
@@ -495,7 +556,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Bike trips visualization - Madrid
+              bike trips visualization - Madrid
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span> 
@@ -526,7 +587,7 @@
             p-2 border rounded group relative
             hover:border-blue-700">
             <div class="mr-4 text-xs group-hover:text-blue-700 group-hover:font-medium">
-              Evolution of airbnb rentals - Basque Country
+              evolution of airbnb rentals - Basque Country
             </div>
             <div class="mr-2 flex flex-wrap gap-x-1 text-xs text-gray-600 group-hover:text-blue-700">
                <span>#visualization</span> 
